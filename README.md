@@ -8,7 +8,7 @@
 各セクションごとにフォルダーを分けています。
 
 1. セットアップ
-    1. [Gitのインストールと基本設定](./01_SetUp copy/install_git.md)
+    1. [Gitのインストールと基本設定](./01_SetUp/install_git.md)
 
 1. 基本を知る
     1. [ローカルリポジトリを作成してみる](./02_HandsOn/01crate_local_repo.md)
@@ -28,4 +28,3 @@
 1. 便利な機能
     1. IssueとProject
     1. dependabot
-    1. 
