@@ -1,40 +1,59 @@
 ## Git のインストールと基本設定
 
-## ** Git のインストール **
+ここではコマンドラインで`git`コマンドを使用できるようにするために
+gitのインストールの仕方と、基本設定の仕方を説明します。
 
-### バージョン確認
+自分はWindowsユーザーですが、基本的な操作はどのOSでもほとんど同じなので、
+MacやLinuxユーザーの方でも問題ないです。
 
-```ruby:qiita.rb
-Git --version
+### 1 gitのインストール
+
+1. ![こちら](https://git-scm.com/downloads)のサイトにアクセスをして自分のOS環境の環境を選択しインストールを開始します
+
+2. インストールができたら`git`コマンドが使えるか確認します
+次のコマンドを打って結果が返されればgitが正常にインストールされています
+
+```powershell
+
+git -v
+
+>> git version 2.38.0.windows.1
 ```
 
-### インスト―ル
+上記の結果が返ってこなかった場合
 
+- PCの再起動をしてみる<br>
+<t>インストールできてもその変更がpcに反映されていないことがあります。<br>
+<t>pcの本体を再起動してもう一度上記のコマンドを実行します
 
-`サイトからdownloadする`
-`WindowsインストールURL`
-https://gitforwindows.org/
-`macインストールURL`
-https://git-scm.com/download/mac
-![サンマの塩焼き](/img/install)
-![サンマの塩焼き2](/img/intall_fill)
-`downloadしたファイルを開き設定を行う`
-![サンマの塩焼き](/img/fill)
-`下記の画像で確認しながらnextで進めてください`
-`基本何もしなくて大丈夫です`
-![サンマの塩焼き3](/img/fill1)
-![サンマの塩焼き4](/img/fill2)
-![サンマの塩焼き5](/img/fill3)
-![サンマの塩焼き6](/img/fill4)
-![サンマの塩焼き7](/img/fill5)
-![サンマの塩焼き8](/img/fill6)
-![サンマの塩焼き9](/img/fill7)
-![サンマの塩焼き10](/img/fill8)
-![サンマの塩焼き11](/img/fill9)
-`installを押してインストール完了です`
+- 環境変数を確認してみる<br>
+<t>再起動しても治らなかった場合`git`コマンドの実行ファイルがpcの環境変数に登録されていない可能性があります。<br>
+<t>システムの環境変数を確認し、`git`の実行ファイルのパスが保存されているか確認します
+                        
+### 2 Gitの基本設定
 
-### しっかり動かなかった場合
+gitをインストールできたら`ユーザー名`と`メールアドレス`を設定します。<br>
+これはすべてのgitコミットにこの情報が用いられます
 
-`見つけ次第追記`
+コマンド操作、GUI操作のどちらかで設定が可能ですが、今回はコマンド操作で行います
+`git config`で設定することができます
 
-## 基本設定
+```powershell
+
+git config --global user.name "<your name>"
+git config --global user.email <your email>
+
+```
+
+できたら確認をします
+
+```powershell
+git config user.name
+>> <your name>
+
+git config user.email
+>> <your email>
+```
+
+結果が返ってきたら設定完了です。
+その他の設定は![git公式サイトのドキュメント](https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E6%9C%80%E5%88%9D%E3%81%AEGit%E3%81%AE%E6%A7%8B%E6%88%90)を参考にしてみてください
