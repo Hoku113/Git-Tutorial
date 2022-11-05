@@ -31,9 +31,9 @@ Organizationのプランの詳細は[こちら](https://github.com/organizations
 
 - Contact email: Organization用のメールアドレスを入力します。作成者のメールアドレス、または組織で管理しているメールアドレスを記入します
 
-- This organization belongs to: 作成する組織がどこに属しているかを選択します。企業に属していない場合は基本的に`My personal account`を選択します
+- This organization belongs to: 作成する組織がどこに属しているかを選択します。企業に属していない場合は基本的に</br>`My personal account`を選択します
 
-4. Organizationにメンバーを招待します。入力欄に追加したいメンバーのgithubメールアドレスまたはユーザー名を入力して`Complete setup`を入力します
+4. Organizationにメンバーを招待します。入力欄に追加したいメンバーのgithubメールアドレスまたはユーザー名を入力して</br>`Complete setup`を入力します
 
 メンバーの招待は後で行うことができます。今メンバーの招待が必要じゃない方は `skip this step`をクリックします。
 
